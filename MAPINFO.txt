@@ -1,0 +1,4 @@
+gameinfo
+{
+	playerclasses="DoomPlayer","FighterPlayer","ClericPlayer","MagePlayer","HereticPlayer"
+}

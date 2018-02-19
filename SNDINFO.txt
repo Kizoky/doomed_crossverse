@@ -1,0 +1,778 @@
+
+/****************************************************************************/
+/*																			*/
+/* HEXEN SOUNDS																*/
+/*																			*/
+/****************************************************************************/
+
+$rolloff * custom 0 2025
+
+$pitchshiftrange 3
+
+$random PlayerFighterExtremeDeathPicker	{ PlayerFighterExtreme1Death
+					  PlayerFighterExtreme2Death
+					  PlayerFighterExtreme3Death }
+
+$playeralias	fighter	male	*death		PlayerFighterNormalDeath
+$playeralias	fighter	male	*crazydeath	PlayerFighterCrazyDeath
+$playeralias	fighter	male	*burndeath	PlayerFighterBurnDeath
+$playeralias	fighter	male	*xdeath		PlayerFighterExtremeDeathPicker
+$playeralias	fighter	male	*pain100	PlayerFighterPain
+$playersounddup	fighter	male	*pain75		*pain100
+$playersounddup	fighter	male	*pain50		*pain100
+$playersounddup	fighter	male	*pain25		*pain100
+$playeralias	fighter	male	*grunt		PlayerFighterGrunt
+$playeralias	fighter	male	*land		PlayerLand
+$playeralias	fighter	male	*poison		PlayerPoisonCough
+$playeralias	fighter	male	*falling	PlayerFighterFallingScream
+$playeralias	fighter	male	*splat		PlayerFallingSplat
+$playeralias	fighter	male	*usefail	PlayerFighterFailedUse
+$playeralias	fighter	male	*puzzfail	PuzzleFailFighter
+$playersound	fighter	male	*jump		fgtjump
+$playeralias	fighter male 	*fistgrunt	FighterGrunt
+
+$random PlayerClericExtremeDeathPicker	{ PlayerClericExtreme1Death
+					  PlayerClericExtreme2Death
+					  PlayerClericExtreme3Death }
+
+$playeralias	cleric	male	*death		PlayerClericNormalDeath
+$playeralias	cleric	male	*crazydeath	PlayerClericCrazyDeath
+$playeralias	cleric	male	*burndeath	PlayerClericBurnDeath
+$playeralias	cleric	male	*xdeath		PlayerClericExtremeDeathPicker
+$playeralias	cleric	male	*pain100	PlayerClericPain
+$playersounddup	cleric	male	*pain75		*pain100
+$playersounddup	cleric	male	*pain50		*pain100
+$playersounddup	cleric	male	*pain25		*pain100
+$playeralias	cleric	male	*grunt		PlayerClericGrunt
+$playeralias	cleric	male	*land		PlayerLand
+$playeralias	cleric	male	*poison		PlayerPoisonCough
+$playeralias	cleric	male	*falling	PlayerClericFallingScream
+$playeralias	cleric	male	*splat		PlayerFallingSplat
+$playeralias	cleric	male	*usefail	PlayerClericFailedUse
+$playeralias	cleric	male	*puzzfail	PuzzleFailCleric
+$playersound	cleric	male	*jump		plrjump
+
+$random PlayerMageExtremeDeathPicker	{ PlayerMageExtreme1Death
+					  PlayerMageExtreme2Death
+					  PlayerMageExtreme3Death }
+
+$playeralias	mage	male	*death		PlayerMageNormalDeath
+$playeralias	mage	male	*crazydeath	PlayerMageCrazyDeath
+$playeralias	mage	male	*burndeath	PlayerMageBurnDeath
+$playeralias	mage	male	*xdeath		PlayerMageExtremeDeathPicker
+$playeralias	mage	male	*pain100	PlayerMagePain
+$playersounddup	mage	male	*pain75		*pain100
+$playersounddup	mage	male	*pain50		*pain100
+$playersounddup	mage	male	*pain25		*pain100
+$playeralias	mage	male	*grunt		PlayerMageGrunt
+$playeralias	mage	male	*land		PlayerLand
+$playeralias	mage	male	*poison		PlayerPoisonCough
+$playeralias	mage	male	*falling	PlayerMageFallingScream
+$playeralias	mage	male	*splat		PlayerFallingSplat
+$playeralias	mage	male	*usefail	PlayerMageFailedUse
+$playeralias	mage	male	*puzzfail	PuzzleFailMage
+$playersound	mage	male	*jump		mgjump
+
+$playeralias   	pig     male   	*usefail   	PigActive1
+$playeralias   	pig     male   	*puzzfail   PigActive2
+$playeralias   	pig     male   	*grunt   	PigActive1
+$playeralias   	pig     male   	*land      	PigActive2
+$playeralias   	pig     male   	*jump      	PigActive1
+$playeralias   	pig     male   	*poison   	PigActive2
+$playeralias   	pig     male   	*falling   	PigPain
+$playeralias   	pig     male   	*splat   	PigDeath
+
+$alias world/drip		Ambient10
+$alias world/watersplash	WaterSplash
+$alias world/lavasizzle		LavaSizzle
+$alias world/sludgegloop	SludgeGloop
+$alias world/wind		Wind
+$alias world/quake		Earthquake
+$alias world/thunder		ThunderCrash
+
+$alias misc/w_pkup		PickupWeapon
+$alias misc/p_pkup		PickupArtifact
+$alias misc/k_pkup		PickupKey
+$alias misc/i_pkup		PickupItem
+$alias misc/spawn		Respawn
+$alias misc/teleport		Teleport
+$alias misc/keytry		DoorLocked
+$alias misc/invuse		UseArtifact
+$alias misc/freeze		FreezeDeath
+$alias misc/icebreak		FreezeShatter
+
+$alias misc/chat		Chat
+$alias misc/chat2		Chat
+
+$alias misc/fallingsplat	PlayerFallingSplat
+
+$alias minotaur/sight		MaulatorSight
+$alias minotaur/pain		MaulatorPain
+$alias minotaur/death		MaulatorDeath
+$alias minotaur/active		MaulatorActive
+$alias minotaur/attack1		MaulatorHamHit
+$alias minotaur/attack2		MaulatorHamSwing
+
+$random BishopActiveSounds	{ BishopActive BishopSight }
+$random PigActive		{ PigActive1 PigActive2 }
+
+$limit PlayerFighterFailedUse	1
+$limit PlayerClericFailedUse	1
+$limit PlayerMageFailedUse	1
+$limit SorcererBallWoosh	4
+$limit SorcererBallBounce	3
+$limit SorcererBallExplode	3
+$limit SorcererBallPop		3
+$limit SorcererBigBallExplode	3
+$limit Ambient1			1
+$limit Ambient2			1
+$limit Ambient3			1
+$limit Ambient4			1
+$limit Ambient5			1
+$limit Ambient6			1
+$limit Ambient7			1
+$limit Ambient8			1
+$limit Ambient9			1
+$limit Ambient10		1
+$limit Ambient11		1
+$limit Ambient12		1
+$limit Ambient13		1
+$limit Ambient14		1
+$limit Ambient15		1
+$limit MysticIncant		4
+
+$pitchshift PlayerMageNormalDeath	0
+$pitchshift PlayerMageCrazyDeath	0
+$pitchshift PlayerMageExtreme1Death	0
+$pitchshift PlayerMageExtreme2Death	0
+$pitchshift PlayerMageExtreme3Death	0
+$pitchshift PlayerMageBurnDeath		0
+$pitchshift PlayerMagePain		0
+$pitchshift PlayerMageGrunt		0
+$pitchshift PlayerMageFallingScream	0
+$pitchshift PlayerMageFailedUse		0
+$pitchshift PickupWeapon		0
+$pitchshift PickupPiece			0
+$pitchshift WeaponBuild			0
+$pitchshift BellRing			0
+
+$alias menu/activate		DoorCloseLight
+$alias menu/backup		PickupKey
+$alias menu/prompt		Chat
+$alias menu/cursor		FighterHammerHitWall
+$alias menu/change		PickupKey
+$alias menu/invalid		DoorCloseMetal	// Hexen does not use this, but I do
+$alias menu/dismiss		PlatformStop
+$alias menu/choose		DoorCloseLight
+$alias menu/clear		PlatformStop
+
+// Hexen does not have ripslop sound like Heretic
+misc/ripslop			dsempty
+misc/netnotch			blddrp1
+
+$alias				intermission/cooptotal		*death
+$alias				intermission/nextstage		DoorCloseLight
+$alias				intermission/paststats		PlatformStop
+$alias				intermission/pastcoopstats	PlatformStop
+$alias				intermission/pastdmstats	*gibbed
+
+$limit DoorCloseLight 4
+
+$limit PuppyBeat 0
+$limit CeantaurPain 0
+$limit BishopPain 0
+$limit SerpentPain 0
+$limit DemonPain 0
+$limit WraithPain 0
+$limit MaulatorPain 0
+$limit EttinPain 0
+$limit FireDemonPain 0
+$limit SorcererPain 0
+$limit DragonPain 0
+
+PlayerFighterNormalDeath        fgtddth
+PlayerFighterCrazyDeath         fgtcdth
+PlayerFighterExtreme1Death      fgtxdth1
+PlayerFighterExtreme2Death      fgtxdth2
+PlayerFighterExtreme3Death      fgtxdth3
+
+PlayerClericNormalDeath         plrdth
+PlayerClericCrazyDeath          plrcdth
+PlayerClericExtreme1Death       clxdth1
+PlayerClericExtreme2Death       clxdth2
+PlayerClericExtreme3Death       clxdth3
+
+PlayerMageNormalDeath           mgdth
+PlayerMageCrazyDeath            mgcdth
+PlayerMageExtreme1Death         mgxdth1
+PlayerMageExtreme2Death         mgxdth2
+PlayerMageExtreme3Death         mgxdth3
+
+PlayerFighterPain               fgtpain
+PlayerClericPain                plrpain3
+PlayerMagePain                  mgpain
+
+PlayerFighterGrunt              fgtgrunt
+PlayerClericGrunt               grunt1
+PlayerMageGrunt                 mggrunt
+
+PlayerLand                      feet4
+PlayerPoisonCough               pois2
+
+PlayerFighterFallingScream      fgtfall
+PlayerClericFallingScream       fall1
+PlayerMageFallingScream         mgfall
+
+PlayerFallingSplat              fallhit
+
+PlayerFighterBurnDeath          plrburn
+PlayerClericBurnDeath           plrburn
+PlayerMageBurnDeath             plrburn
+
+PlayerFighterFailedUse          fgtgrunt
+PlayerClericFailedUse           grunt1
+PlayerMageFailedUse             mggrunt
+
+
+FighterPunchMiss        punchmis
+FighterPunchHitWall     punch8
+FighterPunchHitThing    mumpun5
+FighterAxeHitThing      axe5
+FighterHammerMiss       hammis2
+FighterHammerHitWall    hamwal1
+FighterHammerHitThing   hmhit1a
+FighterHammerContinuous hamfly1
+FighterHammerExplode    impact3
+FighterSwordFire        sword2
+FighterSwordExplode     impact3
+FighterGrunt            gntmis1
+
+
+ClericCStaffFire        spell1
+ClericCStaffExplode     glbhit4
+ClericCStaffHitThing    vamp5
+ClericFlameFire         strike3
+ClericFlameExplode      strike1
+ClericFlameCircle       firedhit
+HolySymbolFire          holy3
+SpiritActive            spirt7
+SpiritAttack            spirt5
+SpiritDie               spirts1
+
+
+MageWandFire            wand4
+MageLightningFire       lite2
+MageLightningContinuous gntpow
+MageLightningReady      wepele2
+MageLightningZap        gntact1
+MageShardsFire          cone3
+MageShardsExplode       shards1b
+MageStaffFire           mage4
+MageStaffExplode        mageball
+
+
+PigActive1              pigrunt1
+PigActive2              squeal1
+PigPain                 pigpain2
+PigAttack               bite4
+PigDeath                pigdth2
+
+
+BishopSight             syab2d
+BishopActive            stb1d
+BishopPain              bshpn1
+BishopAttack            pop
+BishopDeath             bishdth1
+BishopMissileExplode    bshhit2
+BishopBlur              blur6
+
+
+CentaurSight            taur1
+CentaurActive           taur2
+CentaurPain             taur4
+CentaurAttack           centhit2
+CentaurDeath            cntdth1
+CentaurLeaderAttack     cntshld4
+CentaurMissileExplode   impact3
+
+
+SerpentSight            wtrcrt7
+SerpentActive           srfc3
+SerpentPain             serppn1
+SerpentAttack           wtrswip
+SerpentMeleeHit         wtrhit
+SerpentDeath            srpdth1
+SerpentBirth            srfc1
+SerpentFXContinuous     glbhiss1
+SerpentFXHit            glbhit4
+
+
+DemonSight              sbtsit5
+DemonActive             sbtsit5
+DemonPain               minact1
+DemonAttack             dematk2
+DemonDeath              sbtdth3
+DemonMissileFire        impfire2
+DemonMissileExplode     impact3
+
+
+WraithSight             raith5a
+WraithActive            raith3
+WraithPain              raith4a
+WraithAttack            raith1b
+WraithDeath             rathdth2
+WraithMissileFire       impfire2
+WraithMissileExplode    impact3
+
+
+MaulatorSight           minsit1
+MaulatorActive          minact2
+MaulatorPain            minpain4
+MaulatorHamSwing        hamblo8a
+MaulatorHamHit          hamfir1
+MaulatorMissileHit      impact3
+MaulatorDeath           mindth4
+
+
+EttinSight              cent2
+EttinActive             cent2
+EttinPain               cent1
+EttinAttack             ethit1
+EttinDeath              cntdth1
+
+
+FireDemonSpawn          spawn3
+FireDemonActive         fired5
+FireDemonPain           fired2
+FireDemonAttack         spit6
+FireDemonMissileHit     firedhit
+FireDemonDeath          fired3
+
+
+IceGuySight             frosty1
+IceGuyActive            frosty1
+IceGuyAttack            frosty2
+IceGuyMissileExplode    shards1b
+
+
+SorcererSight           sorboss1
+SorcererActive          sorboss2
+SorcererPain            sorboss3
+SorcererSpellCast       woosh3
+SorcererBallWoosh       balls1
+SorcererDeathScream     sordie2
+SorcererBishopSpawn     bishapp
+SorcererBallPop         cork
+SorcererBallBounce      bounce2
+SorcererBallExplode     impact3
+SorcererBigBallExplode  sorblexp
+SorcererHeadScream      sorblexp
+
+
+DragonSight             dragsit1
+DragonActive            dragsit1
+DragonWingflap          wing1
+DragonAttack            mage4
+DragonPain              dragpn2
+DragonDeath             dragdie2
+DragonFireballExplode   mageball
+
+
+KoraxSight              korsit
+KoraxActive             koract
+KoraxPain               korpn1
+KoraxAttack             koratk
+KoraxCommand            korcom
+KoraxDeath              kordth1
+KoraxStep               step
+
+KoraxVoiceGreetings     grtngs1
+KoraxVoiceReady         ready1
+KoraxVoiceBlood         blood1
+KoraxVoiceGame          game1
+KoraxVoiceBoard         board1
+KoraxVoiceWorship       wrship1
+KoraxVoiceMaybe         maybe1
+KoraxVoiceStrong        strong1
+KoraxVoiceFace          face1
+
+PuppyBeat               pup4
+
+PlatformStart           dorstp3
+PlatformStartMetal      mtlstrt1
+PlatformStop            dorstp1b
+StoneMove               stnmv4
+MetalMove               mtlmv3
+
+DoorOpen                drltch3a
+DoorLocked              locked
+
+DoorOpenMetal           stmdr1
+DoorCloseMetal          drstp2
+DoorCloseLight          dorstp4
+DoorCloseHeavy          drstp7
+DoorCreak               drcrk5a
+
+LavaMove                lava2
+WaterMove               brook1
+IceStartMove            icemv2
+EarthStartMove          quake2
+
+PickupWeapon            sample11
+PickupArtifact          art1
+PickupKey               keys2a
+PickupItem              picup5
+PickupPiece             piece1
+WeaponBuild             sample11
+UseArtifact             artact1
+Respawn                 respawn
+PuzzleFailFighter       fgthmm
+PuzzleFailCleric        clhmm
+PuzzleFailMage          mghmm
+PuzzleSuccess           puzslv
+Chat                    chat3
+BatScream               bats
+ClockTick               tictoc
+EtherealTeleport	ethport1
+MysticIncant		puzslv
+
+Switch1                 chnswch8
+Switch2                 swtch6
+SwitchOtherLevel        puzslv1
+ValveTurn               swtchv4
+RopePull                swtchrp1
+
+BlastRadius             blastr
+FlyBuzz                 fly3
+Earthquake              quake2
+
+BellRing                bellrng
+TreeBreak               treebrk
+TreeExplode             treeburn
+SuitofArmorBreak        armorexp
+PoisonShroomPain        stretch3
+PoisonShroomDeath       puff1
+
+Ignite                  torch2
+Fireball                impact3
+
+GlassShatter            glass5
+FlechetteBounce         flech4
+FlechetteExplode        firedhit
+
+ThunderCrash            thndr1
+Teleport                tport1
+PotteryExplode          potbrk1
+Drip                    blddrp1
+Wind                    wind3
+ThrustSpikeRaise        spike3
+ThrustSpikeLower        spike2
+
+FreezeDeath             icedth1
+FreezeShatter           icebrk1a
+
+WaterSplash             gloop1
+LavaSizzle              acid5
+SludgeGloop             muck5
+StartupTick             tick
+
+Ambient1                insects1
+Ambient2                crkets
+Ambient3                crkets1
+Ambient4                katydid
+Ambient5                frogs
+Ambient6                owl
+Ambient7                bird
+Ambient8                shlurp
+Ambient9                bubble
+Ambient10               drop2
+Ambient11               rocks
+Ambient12               chains
+Ambient13               gong
+Ambient14               steel1
+Ambient15               steel2
+
+/****************************************************************************/
+/*																			*/
+/* HERETIC SOUNDS															*/
+/*																			*/
+/****************************************************************************/
+
+$rolloff * custom 0 1600
+
+$pitchshiftrange 2
+
+$playersound	corvus	male	*wimpydeath	plrwdth
+$playersound	corvus	male	*death		plrdth
+$playersound	corvus	male	*crazydeath	plrcdth
+$playersound	corvus	male	*gibbed		gibdth
+$playersound	corvus	male	*pain100	plrpai
+$playersounddup	corvus	male	*pain75		*pain100
+$playersounddup	corvus	male	*pain50		*pain100
+$playersounddup	corvus	male	*pain25		*pain100
+$playersound	corvus	male	*weaponlaugh	wpnup
+$playersounddup	corvus	male	*evillaugh	*weaponlaugh
+$playersound	corvus	male	*grunt		plroof
+$playersounddup	corvus	male	*usefail	*grunt
+$playersounddup	corvus	male	*land		*grunt
+$playersound	corvus	male	*jump		plrjmp
+$playersound	corvus	male	*burndeath	hedat1
+
+$playeralias	chicken male	*usefail	chicken/peck
+$PlayerAlias   	Chicken Male   	*Grunt   	chicken/pain
+$PlayerAlias   	Chicken Male   	*Land      	chicken/pain
+$PlayerAlias   	Chicken Male   	*Jump      	chicken/active
+$PlayerAlias   	Chicken Male   	*EvilLaugh 	chicken/active
+
+chicken/sight			chicpai
+chicken/pain			chicpai
+chicken/death			chicdth
+chicken/attack			chicatk
+
+misc/burn			hedat1
+
+weapons/staffhit		stfhit
+weapons/staffpowerhit		stfpow
+weapons/staffcrackle		stfcrk
+weapons/wandhit			gldhit
+weapons/bowshoot		bowsht
+weapons/bowhit			hrnhit
+weapons/gauntletsactivate	gntact
+weapons/gauntletsuse		gntuse
+weapons/gauntletson		gntful
+weapons/gauntletshit		gnthit
+weapons/gauntletspowhit		gntpow
+weapons/maceshoot		lobsht
+weapons/macebounce		bounce
+weapons/macehit			lobhit
+weapons/macestop		pstop
+weapons/maceexplode		phohit
+weapons/blasterhit		blshit
+weapons/blasterpowhit		hrnhit
+weapons/blastershoot		blssht
+weapons/hornrodshoot		hrnsht
+weapons/hornrodhit		hrnhit
+weapons/hornrodpowshoot		hrnpow
+weapons/hornrodpowhit		ramphit
+weapons/phoenixshoot		phosht
+weapons/phoenixhit		phohit
+weapons/phoenixpowshoot		phopow
+
+$limit	weapons/gauntletson		0
+$limit	weapons/gauntletshit		0
+$limit	weapons/gauntletspowhit		0
+$limit	weapons/gauntletsactivate	0
+$limit	weapons/gauntletsuse		0
+$limit	weapons/maceexplode		0
+$limit	weapons/phoenixhit		0
+$limit	weapons/phoenixpowshoot		1
+
+// [RH] Heretic didn't have these limitless, but they can sound bad if they're not
+$limit weapons/bowhit 0
+$limit weapons/hornrodshoot 0
+$limit weapons/hornrodhit 0
+$limit weapons/maceshoot 0
+
+himp/sight			impsit
+himp/attack			impat1
+himp/pain			imppai
+himp/death			impdth
+himp/active			impsit
+himp/leaderattack		impat2
+
+misc/invuse			artiuse
+
+$limit	misc/invuse		1
+
+world/podexplode		podexp
+world/podgrow			newpod
+world/wind			wind
+world/waterfall			waterfl
+
+$limit world/podexplode		0
+$limit world/podgrow		0
+$limit world/wind		1
+
+misc/i_pkup			itemup
+misc/k_pkup			keyup
+misc/p_pkup			artiup
+$alias misc/w_pkup		*weaponlaugh
+
+misc/rain			ramrain
+misc/spawn			respawn
+
+$limit misc/spawn		1
+
+//
+// Minotaur sounds
+//
+
+minotaur/sight			minsit
+minotaur/melee			stfpow
+minotaur/attack1		minat1
+minotaur/attack2		minat2
+minotaur/attack3		minat3
+minotaur/pain			minpai
+minotaur/death			mindth
+minotaur/active			minact
+minotaur/fx2hit			phohit
+minotaur/fx3hit			phohit
+
+//
+// Wizard sounds
+//
+
+wizard/sight			wizsit
+wizard/attack			wizatk
+wizard/death			wizdth
+wizard/pain			wizpai
+wizard/active1			wizact
+$random wizard/active 		{ wizard/sight wizard/active1 }
+
+//
+// Switch sounds
+//
+
+switches/normbutn		switch
+$alias switches/exitbutn	switches/normbutn // Heretic has no special exit button sound
+
+//
+//
+// Platform Sounds
+//
+
+plats/pt1_strt			pstart
+plats/pt1_stop			pstop
+plats/pt1_mid			dormov
+plats/pt2_mid			stnmov
+
+//
+// Door Sounds
+//
+
+doors/dr1_open			doropn
+doors/dr1_clos			dorcls
+doors/dr2_open			doropn
+doors/dr2_clos			dorcls
+
+//
+// Ambient sounds
+//
+
+world/amb1			amb1
+world/amb2			amb2
+world/amb3			amb3
+world/amb4			amb4
+world/amb5			amb5
+world/amb6			amb6
+world/amb7			amb7
+world/amb8			amb8
+world/amb9			amb9
+world/amb10			amb10
+world/amb11			amb11
+world/amb12			bstsit
+
+$limit world/amb1		1
+$limit world/amb2		1
+$limit world/amb3		1
+$limit world/amb4		1
+$limit world/amb5		1
+$limit world/amb6		1
+$limit world/amb7		1
+$limit world/amb8		1
+$limit world/amb9		1
+$limit world/amb10		1
+$limit world/amb11		0
+
+misc/chat			chat
+misc/teleport			telept
+misc/ripslop			ripslop
+
+$limit misc/chat		1
+
+world/drip			gloop
+world/watersplash		gloop
+world/lavasizzle		burn
+world/sludgegloop		dsempty
+
+mummy/sight			mumsit
+mummy/attack1			mumat1
+mummy/attack2			mumat2
+mummy/pain			mumpai
+mummy/death			mumdth
+mummy/active			mumsit
+mummy/head			mumhed
+
+beast/sight			bstsit
+beast/attack			bstatk
+beast/pain			bstpai
+beast/death			bstdth
+beast/active			bstact
+
+snake/attack			snkatk
+snake/sight			snksit
+snake/pain			snkpai
+snake/death			snkdth
+snake/active			snkact
+
+clink/sight			clksit
+clink/attack			clkatk
+clink/pain			clkpai
+clink/death			clkdth
+clink/active			clkact
+
+hknight/sight			kgtsit
+hknight/attack			kgtatk
+hknight/melee			kgtat2
+hknight/pain			kgtpai
+hknight/death			kgtdth
+hknight/active			kgtsit
+hknight/hit			hrnhit
+hknight/axewhoosh		kgtatk
+
+misc/timebomb			phohit
+world/volcano/blast		lobhit
+world/volcano/shoot		bstatk
+
+ironlich/sight			hedsit
+ironlich/attack1		hedat1
+ironlich/attack2		hedat2
+ironlich/attack3		hedat3
+ironlich/pain			hedpai
+ironlich/death			heddth
+ironlich/active			hedact
+
+dsparilserpent/sight		bstsit
+dsparilserpent/attack		bstatk
+dsparilserpent/pain		sbtpai
+dsparilserpent/death		sbtdth
+dsparilserpent/active		sbtact
+
+dsparil/sight			sorsit
+dsparil/attack			soratk
+dsparil/pain			sorpai
+dsparil/active			soract
+dsparil/rise			sorrise
+dsparil/zap			sorzap
+dsparil/scream			sordsph
+dsparil/explode			sordexp
+dsparil/bones			sordbon
+
+chicken/active			chicact
+chicken/attack			chicatk
+chicken/pain			chicpai
+chicken/death			chicdth
+chicken/peck1			chicpk1
+chicken/peck2			chicpk2
+chicken/peck3			chicpk3
+$random chicken/peck		{ chicken/peck1  chicken/peck2  chicken/peck3 }
+
+menu/activate			dorcls
+menu/backup			switch
+menu/prompt			chat
+menu/choose			dorcls
+menu/cursor			switch
+menu/change			keyup
+menu/invalid			plroof
+menu/dismiss			dorcls
+menu/clear			dorcls

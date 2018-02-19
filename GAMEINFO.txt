@@ -1,0 +1,3 @@
+STARTUPTITLE = "Doomed Crossverse in Beyond Heretic"
+//IWAD = "DOOM2.WAD"
+STARTUPCOLORS = "FF FF 00", "00 00 00"
