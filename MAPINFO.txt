@@ -1,4 +1,4 @@
 gameinfo
 {
-	playerclasses="DoomPlayer","FighterPlayer","ClericPlayer","MagePlayer","HereticPlayer"
+	playerclasses="DoomedPlayer","FighterDoomedPlayer","ClericDoomedPlayer","MageDoomedPlayer","HereticDoomedPlayer"
 }

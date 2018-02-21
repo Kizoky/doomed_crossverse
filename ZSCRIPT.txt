@@ -1,0 +1,5 @@
+// Main characters
+#include "actors/DCiBH/Doom.Player.txt"
+#include "actors/DCiBH/Heretic.Player.txt"
+#include "actors/DCiBH/Hexen.Player.txt"
+#include "actors/DCiBH/Strife.Player.txt"
